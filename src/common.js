@@ -1,28 +1,28 @@
 import { store as iceStore } from '@ice/stark-data'
 
-const COMMON_GLOBAL_STATE = 'GLOBAL_MESSAGE'
+const GLOBAL_MESSAGE = 'GLOBAL_MESSAGE'
 
-function init (mark, data) {
-  mark = mark || COMMON_GLOBAL_STATE
+function init (data, mark) {
+  mark = mark || GLOBAL_MESSAGE
   iceStore.set(mark, data)
 }
 
-function send (mark, data) {
-  mark = mark || COMMON_GLOBAL_STATE
+function send (data, mark) {
+  mark = mark || GLOBAL_MESSAGE
   iceStore.set(mark, data)
 }
 
-function receive (mark, callback) {
+function receive (callback, mark) {
   if (typeof callback !== 'function') {
     console.error(`Error from common receive method. The callback must be a function!`)
     return
   }
-  mark = mark || COMMON_GLOBAL_STATE
+  mark = mark || GLOBAL_MESSAGE
   iceStore.on(mark, callback, true)
 }
 
-function close (mark, callback) {
-  mark = mark || COMMON_GLOBAL_STATE
+function close (callback, mark) {
+  mark = mark || GLOBAL_MESSAGE
   iceStore.off(mark, callback)
 }
 

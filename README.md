@@ -20,9 +20,9 @@ import { init, send, receive, close } from 'global-message'
 
 ### 方法介绍
 
-* init(mark: string, data: any)
+* init(data: any, mark: string)
 
-  init()用于初始化一个通信实例，该通信实例以mark为唯一标识，初始值为data。
+  init()用于初始化一个通信实例，该通信实例以mark为唯一标识，初始值为data。mark默认值为'GLOBAL_MESSAGE'。
 
   ```
   const userInfo = {
@@ -34,9 +34,9 @@ import { init, send, receive, close } from 'global-message'
   init('customer', userInfo)
   ```
 
-* send(mark: string, data: any)
+* send(data: any, mark: string)
 
-  send()用于发送通信数据，mark指定使用哪个通信实例，data为要发送的数据。
+  send()用于发送通信数据，mark指定使用哪个通信实例，data为要发送的数据。mark默认值为'GLOBAL_MESSAGE'。
 
   ```
   userInfo.name = 'Tom'
@@ -44,9 +44,9 @@ import { init, send, receive, close } from 'global-message'
   send('customer', userInfo)
   ```
 
-* receive(mark: string, callback: function)
+* receive(callback: function, mark: string)
 
-  receive()用于监听指定mark通信实例，如果有信息通信，可通过回调方法callback处理监听接收到的数据。
+  receive()用于监听指定mark通信实例，如果有信息通信，可通过回调方法callback处理监听接收到的数据。mark默认值为'GLOBAL_MESSAGE'。
 
   ```
   // data为通信数据
@@ -72,9 +72,9 @@ import { init, send, receive, close } from 'global-message'
 
   ```
 
-* close(mark: string, callback: function)
+* close(callback: function, mark: string)
 
-  close()用于关闭指定mark的通信，callback指定要移除的回调方法。
+  close()用于关闭指定mark的通信，callback指定要移除的回调方法。mark默认值为'GLOBAL_MESSAGE'。
 
   ```
   // data为通信数据

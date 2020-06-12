@@ -1,6 +1,6 @@
 {
   "name": "global-message",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "提供微前端的父子，子子应用之间的实时通信能力",
   "private": false,
   "main": "src/index.js",
