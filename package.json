@@ -1,0 +1,26 @@
+{
+  "name": "global-message",
+  "version": "1.0.0",
+  "description": "提供微前端的父子，子子应用之间的实时通信能力",
+  "private": false,
+  "main": "src/index.js",
+  "home": "https://github.com/yexiaofan/global-message.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yexiaofan/global-message.git"
+  },
+  "keywords": [
+    "webpack",
+    "global",
+    "global-message",
+    "store",
+    "micro-frontends",
+    "微前端"
+  ],
+  "author": "yepengfei",
+  "license": "MIT",
+  
+  "dependencies": {
+    "@ice/stark-data": "^0.1.2"
+  }
+}
