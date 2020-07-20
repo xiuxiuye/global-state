@@ -7,7 +7,7 @@ global-state提供微前端父子、子子应用之间的实时通信能力。
 ## 安装
 
 ```
-npm install --save global-message
+npm install --save global-state
 ```
 
 ## 引入
