@@ -1,13 +1,13 @@
 {
-  "name": "global-message",
-  "version": "1.0.1",
+  "name": "global-state",
+  "version": "1.0.0",
   "description": "提供微前端的父子，子子应用之间的实时通信能力",
   "private": false,
   "main": "src/index.js",
-  "home": "https://github.com/yexiaofan/global-message.git",
+  "home": "https://github.com/yexiaofan/global-state.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yexiaofan/global-message.git"
+    "url": "https://github.com/yexiaofan/global-state.git"
   },
   "keywords": [
     "webpack",
